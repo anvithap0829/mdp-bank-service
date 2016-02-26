@@ -4,6 +4,8 @@ package com.mdp.bank.model;
  * Created on 2/25/16.
  *
  * @author Adrian Pena
+ *
+ * This is the model for the customer
  */
 public class Customer {
     private long id;
@@ -17,8 +19,8 @@ public class Customer {
     public Customer(long id, string name, string lastName, string email){
         this.id = id;
         this.name = name;
-        this .lastName=lastName;
-        this.email=email;
+        this .lastName = lastName;
+        this.email = email;
     }
 
     public long getId() {
