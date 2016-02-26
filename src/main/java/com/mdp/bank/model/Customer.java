@@ -9,14 +9,14 @@ package com.mdp.bank.model;
  */
 public class Customer {
     private long id;
-    private string name;
-    private string lastName;
-    private string email;
+    private String name;
+    private String lastName;
+    private String email;
 
     public Customer(){
     }
 
-    public Customer(long id, string name, string lastName, string email){
+    public Customer(long id, String name, String lastName, String email){
         this.id = id;
         this.name = name;
         this .lastName = lastName;
@@ -31,27 +31,27 @@ public class Customer {
         this.id = id;
     }
 
-    public string getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(string name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    public string getLastName() {
+    public String getLastName() {
         return lastName;
     }
 
-    public void setLastName(string lastName) {
+    public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
-    public string getEmail() {
+    public String getEmail() {
         return email;
     }
 
-    public void setEmail(string email) {
+    public void setEmail(String email) {
         this.email = email;
     }
 }
