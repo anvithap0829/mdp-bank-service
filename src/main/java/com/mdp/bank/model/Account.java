@@ -1,11 +1,26 @@
 package com.mdp.bank.model;
 
+/***
+ * 
+ * account class for model
+ * 
+ * @author Jeff
+ *        
+ */
 public class Account
 {
     private long id;
     private int accountNumber;
     private float balance;
     private Customer customer;
+    
+    public Account(long id, int accountNumber, float balance, Customer customer)
+    {
+        this.id = id;
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.customer = customer;
+    }
     
     public long getId()
     {
