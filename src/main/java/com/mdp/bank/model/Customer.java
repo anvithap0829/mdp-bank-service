@@ -1,5 +1,10 @@
 package com.mdp.bank.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
 /**
  * Created on 2/25/16.
  *
@@ -7,8 +12,12 @@ package com.mdp.bank.model;
  *
  * This is the model for the customer
  */
+@Entity
 public class Customer {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+
     private String name;
     private String lastName;
     private String email;
